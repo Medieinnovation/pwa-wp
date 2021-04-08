@@ -1,4 +1,4 @@
-# PWA
+# PWA (Kiosk-version)
 
 ![Banner](.wordpress-org/banner-1544x500.png)
 

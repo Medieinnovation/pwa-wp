@@ -6,10 +6,10 @@
  * @license      GPL-2.0+
  *
  * @wordpress-plugin
- * Plugin Name: PWA
+ * Plugin Name: PWA (Kiosk version)
  * Plugin URI:  https://github.com/GoogleChromeLabs/pwa-wp
  * Description: Feature plugin to bring Progressive Web App (PWA) capabilities to Core
- * Version:     0.7.0-alpha
+ * Version:     0.7.0-alpha-kiosk
  * Author:      PWA Plugin Contributors
  * Author URI:  https://github.com/GoogleChromeLabs/pwa-wp/graphs/contributors
  * Text Domain: pwa
@@ -293,8 +293,8 @@ function pwa_load_service_worker_integrations( WP_Service_Worker_Scripts $script
 }
 add_action( 'wp_default_service_workers', 'pwa_load_service_worker_integrations', -1 );
 
-$wp_web_app_manifest = new WP_Web_App_Manifest();
-$wp_web_app_manifest->init();
+/*$wp_web_app_manifest = new WP_Web_App_Manifest();
+$wp_web_app_manifest->init();*/
 
 $wp_https_detection = new WP_HTTPS_Detection();
 $wp_https_detection->init();
